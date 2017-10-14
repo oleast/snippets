@@ -481,4 +481,18 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/osx,java,linux,macos,python,windows,java-web,intellij,reactnative,intellij+all
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+
+# End of https://www.gitignore.io/api/osx,java,linux,macos,python,windows,java-web,intellij,reactnative,intellij+all,maven
