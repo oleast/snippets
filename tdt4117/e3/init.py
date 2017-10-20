@@ -1,49 +1,25 @@
-import gensim
-from sklearn import preprocessing
-import codecs
-import helper_functions as hf
-from tasks import Tasks
+import t1
+import t2
+import t3
+import t4
 
-"""
+FOLDER = "./assets/"
+TEXTFILE = FOLDER + "book_full.txt"
+STOPWORDS = FOLDER + "stop_words.txt"
 
-# get paragraphs and stopwords
-paragraphs = hf.get_paragraphs(codecs.open("./text", "r", "utf-8"))
-stopwords = hf.get_stop_words(codecs.open("./stopWords.txt", "r", "utf-8"))
+def main():
+    
+    # Run Task 1
+    parapgraphs, stemmed_paragraphs = t1.main(TEXTFILE)
 
-# Remove paragraphs with gutenberg
-paragraphs = hf.remove("Gutenberg", paragraphs)
+    # Run Task 2
+    bags, dictionary = t2.main(STOPWORDS, stemmed_paragraphs)
 
-# Remove punktuation
-paragraphs = hf.remove_punctuations(paragraphs)
+    # Run Task 3
+    tfidf_model, tfidf_corpus, matrix_sim, lsi_matrix, lsi_model = t3.main(bags, dictionary)
 
-copy = list(map(list, paragraphs))
+    # Run Task 4
+    t4.main(dictionary, tfidf_model, tfidf_corpus, matrix_sim, lsi_matrix, lsi_model, parapgraphs)
 
-# stemming the words
-paragraphs = hf.stem(paragraphs)
-
-dictionary = gensim.corpora.Dictionary(paragraphs)
-
-# get stopwords
-stopIds = hf.get_stop_wordids(stopwords, dictionary)
-
-dictionary.filter_tokens(stopIds)
-bags = []
-for p in paragraphs:
-    bags.append(dictionary.doc2bow(p))
-
-tfidf_model = gensim.models.TfidfModel(bags)
-tfidf_corpus = tfidf_model[bags]
-idf_matrix = gensim.similarities.MatrixSimilarity(tfidf_corpus)
-
-lsi_model = gensim.models.LsiModel(tfidf_corpus, id2word=dictionary, num_topics=100)
-lsi_corpus = lsi_model[bags]
-lsi_matrix = gensim.similarities.MatrixSimilarity(lsi_corpus)
-
-print(lsi_model.show_topics())
-
-"""
-t = Tasks()
-t.task_one()
-t.task_two()
-t.task_three()
-t.task_four()
+if __name__ == "__main__":
+    main()
