@@ -1,0 +1,14 @@
+Rema	Milk	14.50
+Rema	Pepsi Max	20.00
+Extra	Milk	14.20
+Kiwi	Pepsi Max	20.50
+Extra	Pepsi Max	19.50
+Rema	Banana	12.50
+Kiwi	Milk	13.00
+Rema	Juice	29.30
+Extra	Juice	23.00
+Rema	Chocolate	14.00
+Extra	Chocolate	13.30
+Kiwi	Chocolate	13.00
+Kiwi	Banana	10.50
+Extra	Banana	11.00
