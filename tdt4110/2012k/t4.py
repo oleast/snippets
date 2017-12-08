@@ -58,17 +58,16 @@ Prosenttall for de fem treningssonene skal returneres i ei liste med fem element
 """
 def pulse_zones(max_pulse: int, pulse_data: list) -> list:
     pulse_limits = pulse_zone_limits(max_pulse)
+    pulse_limits.append(max_pulse)
     zone_counts = [0, 0, 0, 0, 0]
     for pulse in pulse_data:
         for i in range(1, len(pulse_limits), 1):
-            if pulse < pulse_limits[i]:
+            if (pulse > pulse_limits[i-1]) and (pulse <= pulse_limits[i]):
                 zone_counts[i-1] += 1
                 break
-            elif i == len(pulse_limits):
-                zone_counts[len(zone_counts)-1] += 1
 
     for i, zone_count in enumerate(zone_counts):
-        zone_counts[i] = zone_counts[i] * (len(pulse_data) / 100)
+        zone_counts[i] = zone_counts[i] * (100 / len(pulse_data))
 
     return zone_counts
 
@@ -80,11 +79,11 @@ def main():
     print(stats)
 
     print("\nTask 4b: ")
-    limits = pulse_zone_limits(stats[2])
+    limits = pulse_zone_limits(188)
     print(limits)
 
     print("\nTask 4c:")
-    zones = pulse_zones(stats[2], pulse_data)
+    zones = pulse_zones(188, pulse_data)
     print(zones)
 
 if __name__ == "__main__":
