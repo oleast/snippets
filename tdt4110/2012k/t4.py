@@ -71,6 +71,34 @@ def pulse_zones(max_pulse: int, pulse_data: list) -> list:
 
     return zone_counts
 
+"""
+Oppgave 4 d) (15 %)
+Lag en funksjon lengstePulsOkning(pulsData) som finner det lengste tidsintervallet i pulsData
+der pulsen ikke går ned fra et sekund til det neste. Funksjonen skal returnere en liste med
+lengden (i sekunder) av dette intervallet og starttiden for intervallet. Dersom det finnes flere
+intervaller med samme lengde, skal funksjonen returnere det intervallet som kommer først i
+pulsData.
+"""
+def longest_pulse_increase(pulse_data: list) -> (int, int):
+    start = 0
+    current_start = 0
+    chain = 0
+    current_chain = 0
+
+    for i in range(1, len(pulse_data)):
+        current = pulse_data[i]
+        previous = pulse_data[i-1]
+        if current >= previous:
+            current_chain += 1
+        else:
+            if current_chain > chain:
+                start = current_start + 1
+                chain = current_chain + 1
+            current_chain = 0
+            current_start = i
+
+    return [chain, start]
+
 def main():
     pulse_data = [110, 118, 125, 127, 127, 130, 129, 131, 132, 134, 134, 135, 145, 157, 165, 172, 173, 178, 179, 178]
 
@@ -85,6 +113,10 @@ def main():
     print("\nTask 4c:")
     zones = pulse_zones(188, pulse_data)
     print(zones)
+
+    print("\nTask 4d:")
+    longest_increase = longest_pulse_increase(pulse_data)
+    print(longest_increase)
 
 if __name__ == "__main__":
     main()
