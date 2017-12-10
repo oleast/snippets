@@ -113,6 +113,11 @@ def tickets_for_concerts(transactions: list):
     tickets = sum(map(lambda transaction: float(transaction[1]), transactions))
     print("Total tickets: {}".format(tickets))
 
+def test():
+    """
+    Supposed to test other methods, but I haven't come to that yet..
+    """
+    pass
 
 def main():
     print("Velkommen til konsertapplikasjonen!")
@@ -120,19 +125,24 @@ def main():
         "0. Gå ut av applikasjonen.",
         "1: Antall biletter for konsert.",
         "2. Totalt beløp for konsert.",
-        "3. Total inntekt for hele arrangementet."
+        "3. Total inntekt for hele arrangementet.",
+        "4. Test other functions."
     ]
     functions = {
         0: exit,
         1: tickets_for_concerts,
         2: concert_earnings,
-        3: total_earnings
+        3: total_earnings,
+        4: test
     }
     transactions = get_transactions("concerts.txt")
     print("\n".join(states))
     state = int(input("Hvilken funksjon vil du bruke?\t"))
     while state != 0:
-        functions[state](transactions)
+        if state in functions:
+            functions[state](transactions)
+        else:
+            print("That is not a supported method!")
         state = int(input("Hvilken funksjon vil du bruke?\t"))
 
 if __name__ == "__main__":
