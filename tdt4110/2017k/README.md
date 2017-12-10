@@ -493,6 +493,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 ```
 
 **Følgende blir da vist på storskjermen (viser utdrag av hendelsesforløpet):**
+
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | E| L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W|
@@ -503,6 +504,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
 **0,1 sekunder senere:**
+
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W| E|
@@ -513,6 +515,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
 **0,1 sekunder senere:**
+
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W| E| L|
@@ -523,6 +526,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
 **... og helt til slutt (3 sekunder senere):**
+
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | W| E| L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !|
