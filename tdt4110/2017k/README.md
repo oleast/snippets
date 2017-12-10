@@ -355,13 +355,14 @@ I denne oppgaven skal du hjelpe _Katpiss Everbeen_ til å lage funksjoner som sk
 system for å vise fram tekst på storskjerm ved store arrangementer. Denne storskjermen kan vise 6
 linjer med tekst, der hver linje består av 30 tegn eller bokstaver som vist i Figur 1.
 
-|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
-|-|-|-|-|-|-|-|-|-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-| | |T|H|I|S| |I|S|  | A|  | G| R| E| A| T|  | L| E| D|  | D| I| S| P| L| A| Y|  |
-| |Y|O|U| |C|A|N| | P| R| O| G| R| A| M|  | T| O|  | S| H| O| W|  | W| H| A| T|  |
-| | |Y|O|U| |W|A|N| T|  | A| S|  | L| O| N| G|  | A| S|  | Y| O| U|  | U| S| E|  |
-| | |T|H|E| |S|H|O| W| _| D| I| S| P| L| A| Y|  | F| U| N| C| T| I| O| N| !|  |  |
-|-| |A|W|E|S|O|M|E|  | -|  | A| W| E| S| O| M| E|  | -|  | A| W| E| S| O| M| E|  |
+| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|  |  | T| H| I| S|  | I| S|  | A|  | G| R| E| A| T|  | L| E| D|  | D| I| S| P| L| A| Y|  |
+|  | Y| O| U|  | C| A| N|  | P| R| O| G| R| A| M|  | T| O|  | S| H| O| W|  | W| H| A| T|  |
+|  |  | Y| O| U|  | W| A| N| T|  | A| S|  | L| O| N| G|  | A| S|  | Y| O| U|  | U| S| E|  |
+|  |  | T| H| E|  | S| H| O| W| _| D| I| S| P| L| A| Y|  | F| U| N| C| T| I| O| N| !|  |  |
+| -|  | A| W| E| S| O| M| E|  | -|  | A| W| E| S| O| M| E|  | -|  | A| W| E| S| O| M| E|  |
+
 **Figur 1 Storskjerm**\
 Storskjermen kommer med funksjonen `show_display` for å vise fram tekst på skjermen som du
 kan bruke i din kode. Funksjonen har input-parameteren content, som er en liste av seks elementer,
@@ -491,13 +492,45 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 >>> scroll_display(content, 1)
 ```
 
-Følgende blir da vist på storskjermen (viser utdrag av hendelsesforløpet):
+**Følgende blir da vist på storskjermen (viser utdrag av hendelsesforløpet):**
+| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| E| L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W|
+| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =|
+| C| H| E| C| K|  | O| U| T|  | A| L| L|  | T| H| E|  | G| R| E| A| T|  | S| T| U| F| F|  |
+| Y| O| U|  | C| A| N|  | B| U| Y|  | A| T|  | O| U| T|  | G| I| F| T|  | S| T| O| R| E|  |
+|  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
+|  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-0,1 sekunder senere:
+**0,1 sekunder senere:**
+| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W| E|
+| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =|
+| C| H| E| C| K|  | O| U| T|  | A| L| L|  | T| H| E|  | G| R| E| A| T|  | S| T| U| F| F|  |
+| Y| O| U|  | C| A| N|  | B| U| Y|  | A| T|  | O| U| T|  | G| I| F| T|  | S| T| O| R| E|  |
+|  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
+|  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-0,1 sekunder senere:
+**0,1 sekunder senere:**
+| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !| W| E| L|
+| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =|
+| C| H| E| C| K|  | O| U| T|  | A| L| L|  | T| H| E|  | G| R| E| A| T|  | S| T| U| F| F|  |
+| Y| O| U|  | C| A| N|  | B| U| Y|  | A| T|  | O| U| T|  | G| I| F| T|  | S| T| O| R| E|  |
+|  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
+|  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-... og helt til slutt (3 sekunder senere):
+**... og helt til slutt (3 sekunder senere):**
+| 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| W| E| L| C| O| M| E|  | T| O|  | T| H| I| S|  | G| R| E| A| T|  | C| O| N| C| E| R| T| !|
+| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =| =|
+| C| H| E| C| K|  | O| U| T|  | A| L| L|  | T| H| E|  | G| R| E| A| T|  | S| T| U| F| F|  |
+| Y| O| U|  | C| A| N|  | B| U| Y|  | A| T|  | O| U| T|  | G| I| F| T|  | S| T| O| R| E|  |
+|  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
+|  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
 ### Oppgave 3f (10%)
 
