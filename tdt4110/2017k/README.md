@@ -492,7 +492,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 >>> scroll_display(content, 1)
 ```
 
-**Følgende blir da vist på storskjermen (viser utdrag av hendelsesforløpet):**
+**Følgende blir da vist på storskjermen (viser utdrag av hendelsesforløpet):**\
 
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
@@ -503,7 +503,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-**0,1 sekunder senere:**
+**0,1 sekunder senere:**\
 
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
@@ -514,7 +514,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-**0,1 sekunder senere:**
+**0,1 sekunder senere:**\
 
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
@@ -525,7 +525,7 @@ Eksempel på kjøring der linje 1 (øverste linja) roteres (scrolles) mot venstr
 |  |  | I| T| G| K|  | P| L| A| Y| S|  | T| H| E|  | B| E| S| T|  | M| U| S| I| C| !|  |  |
 |  |  |  |  |  |  |  |  | I| T| G| K|  |  | F| O| R|  | E| V| E| R| !|  |  |  |  |  |  |  |
 
-**... og helt til slutt (3 sekunder senere):**
+**... og helt til slutt (3 sekunder senere):**\
 
 | 1| 2| 3| 4| 5| 6| 7| 8| 9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
